@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>上海乾视通信技术有限公司</title>
+    <link type="text/css" href="css/Home.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/superslide.2.1.js"></script>
+    <script type="text/javascript" src="js/Home.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+
+            /* 设置第一张图片 */
+            $(".slider .scroll-bg li").first().before($(".slider .scroll-bg li").last());
+
+            /* 鼠标悬停箭头按钮显示 */
+            $(".slider").hover(function(){
+                $(this).find(".arrow").stop(true,true).fadeIn(300)
+            },function(){
+                $(this).find(".arrow").fadeOut(300)
+            });
+
+            /* 滚动切换 */
+            $(".slider").slide({
+                titCell:".hd ul",
+                mainCell:".scroll-bg ul",
+                effect:"leftLoop",
+                autoPlay:true,
+                vis:1,
+                autoPage:true,
+                trigger:"click"
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<div class="header-company">
+   <div class="company-logo"><img src="picture/logo.png" alt=""/></div>
+   <div class="company-tel">
+       <div class="icon-div"><i class="icon-tel"></i>客服热线:</div>
+       <div class="tel-num">400-661-1313</div>
+   </div>
+</div>
+
+
+<div class="slider">
+    <div class="header-nav">
+        <ul id="nav-TitleClick" class="nav-Title">
+            <li class="firstLi" onclick="navtitleOclick(this)" ><a class="firstA" href="#">网站首页</a></li>
+            <li onclick="navtitleOclick(this)"><a href="#">企业简介</a></li>
+            <li onclick="navtitleOclick(this)"><a href="#">行业新闻</a></li>
+            <li onclick="navtitleOclick(this)"><a href="#">商务合作</a></li>
+            <li onclick="navtitleOclick(this)"><a href="#">区域代理</a></li>
+            <li onclick="navtitleOclick(this)"><a href="#">联系我们</a></li>
+
+        </ul>
+    </div>
+
+<div class="scroll-bg">
+    <ul class="scroll-icon">
+        <li><img src="picture/banner1.jpg" alt="01"/></li>
+        <li><img src="picture/banner2.jpg" alt="02"/></li>
+        <li><img src="picture/banner3.jpg" alt="03"/></li>
+    </ul>
+</div>
+    <div class="hd"><ul></ul></div>
+</div>
+
+</body>
+</html>
