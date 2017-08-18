@@ -1,0 +1,60 @@
+.AboutUs-Content{
+    width: 100%;
+    min-height: 300px;
+    min-width: 1400px;
+
+}
+.poster{
+    width:100%;
+
+
+}
+.poster img{
+    /*width: 100%;*/
+position: absolute;
+}
+.introduction{
+    width: 100%;
+    height: 900px;
+    /*background-color: antiquewhite;*/
+    text-align: center;
+}
+.introduction p{
+    line-height: 100%;
+    padding: 120px 0;
+
+}
+.introduction-content{
+    margin: 0 auto;
+    width: 1000px;
+    height: 600px;
+    background-color: #ecedf1;
+
+}
+.introduction-content img{
+    margin: 20px 20px;
+    float: left;
+}
+.introduction-content-text{
+    width: 60%;
+    float: left;
+}
+.introduction-content-text p{
+    line-height: 40px;
+    font-size: 16px;
+    text-indent: 2em;
+    padding: 10px 30px;
+    float: left;
+    text-align: left;
+}
+.introduction-content-img{
+    float: left;
+    width: 40%;
+    margin-top: -20px;
+}
+.introduction-content-img img{
+    width: 80%;
+
+
+
+}
